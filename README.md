@@ -1,274 +1,242 @@
-Smart Waste Management System
+# ♻️ Smart Waste Management System
 
-Software Requirement Specifications
-Group – 8, Section (A), Semester (V), 3rd Year CS
-University of Information Technology
+## 📘 Software Requirement Specifications (SRS)
 
-Members
+**Group – 8 | Section (A) | Semester (V) | 3rd Year CS**
+**University of Information Technology**
 
-Kyaw Zin Hein TNT - 1935
+---
 
-April Oo TNT - 1943
+## 👥 Team Members
 
-Min Kyi Sin Thant TNT - 1945
+* 👨‍💻 **Kyaw Zin Hein** — TNT-1935
+* 👩‍💻 **April Oo** — TNT-1943
+* 👨‍💻 **Min Kyi Sin Thant** — TNT-1945
+* 👨‍💻 **Thwin Khant Oo** — TNT-1947
+* 👨‍💻 **Aung Moe Myint** — TNT-1958
 
-Thwin Khant Oo TNT - 1947
+---
 
-Aung Moe Myint TNT - 1958
+## 📑 Table of Contents
 
-Table of Contents
+1. 🌱 Introduction
+2. 🧩 Overall Description
+3. 📋 Requirement Specification
+4. 📊 Diagrams
+5. ⚙️ System Overview & Features
+6. 🛠 Technologies Used
+7. 🚀 Getting Started
 
-Introduction
+---
 
-1.1 Purpose
-1.2 Scope of the Project
-1.3 Overview of the Document
+## 1️⃣ Introduction
 
-Overall Description
+### 🎯 1.1 Purpose
 
-2.1 System Environment
-2.2 Product Functions
-2.3 Functional Requirements Specification
-2.4 Functional Requirements
-2.5 User Characteristics
-2.6 Non-functional Requirements
+To develop an **AI-powered Smart Waste Management System** that promotes responsible waste disposal and recycling through technology, automation, and community participation.
 
-Requirement Specification
+### 🌍 1.2 Scope of the Project
 
-3.1 External Interface Requirement
-3.2 Class Diagram
-3.3 Detailed Non-functional Requirements
+* Users upload waste photos 📸
+* AI analyzes **type, weight, recyclability** 🤖
+* Waste collection is verified via AI
+* Users earn points & rewards 🎁
 
-Diagrams
+### 📄 1.3 Document Overview
 
-4.1 ER Diagram
-4.2 Sequence Diagram
+This document explains system functionality, environment, user interaction, and detailed system requirements.
 
-1. Introduction
-1.1 Purpose
+---
 
-The purpose of this project is to develop an AI-powered waste management platform that encourages responsible waste disposal and recycling. It is a step toward a cleaner environment by integrating technology and community-driven initiatives.
+## 2️⃣ Overall Description
 
-1.2 Scope of the Project
+### 🖥️ 2.1 System Environment
 
-The Smart Waste Management System is designed to promote efficient waste disposal and recycling. Users can submit waste photos, which AI analyzes to determine the type, weight, and reusability of waste. The system facilitates waste collection and ensures authenticity via AI validation. A reward system encourages active participation.
+**Actors:**
 
-1.3 Overview of the Document
+* 👤 User
+* ⚙️ System (AI-powered backend)
 
-This document describes the overall functionality, system environment, user interactions, and specific system requirements to make waste management more efficient and rewarding for users.
+Users can report waste, collect waste, earn points, and redeem rewards.
 
-2. Overall Description
-2.1 System Environment
+### 🧠 2.2 Product Functions
 
-There are two primary actors in the system: User and System. Users can create accounts, report waste, collect waste, earn points, and exchange those points for rewards. The system involves validating waste reports and providing feedback based on AI analysis.
+* 📤 Upload waste (AI analysis)
+* 🔍 Search waste by location/date
+* ✅ AI waste validation
+* 💬 AI Chatbot support
+* 🏆 Leaderboard & progress tracking
+* 🎁 Reward system
 
-2.2 Product Functions
+### 🧾 2.3 Functional Requirement Specification
 
-Uploading and managing waste posts: AI analyzes the type, weight, and potential recyclability of waste.
+Includes **User & Admin use cases** such as registration, reporting, collecting, and AI interaction.
 
-Searching waste posts: Users can search for waste reports by location and date.
+### ✅ 2.4 Functional Requirements
 
-AI-powered waste validation: Ensures that collected waste matches the reported waste via photo submissions.
+* 📝 Register / Login
+* 📸 Report waste
+* 🚮 Collect waste
+* 🎯 Earn & redeem points
+* 📊 View leaderboard
 
-AI chatbot: Assists users with waste management queries.
+### 👥 2.5 User Characteristics
 
-Tracking user contributions: Users can view their progress and rank on a leaderboard.
+* Registered users
+* Basic smartphone & internet knowledge
 
-Reward system: Allows users to earn points and exchange them for rewards.
+### 🔒 2.6 Non‑Functional Requirements
 
-2.3 Functional Requirements Specification
+* ⚡ Performance: AI response ≤ 10 sec
+* 📈 Scalability: Real‑time leaderboard
+* 🔁 Reliability: 24/7 availability
+* 🔐 Security: Encrypted data
+* 🧑‍💻 Usability: User‑friendly UI
 
-User and Admin use cases: Includes registering, logging in, reporting waste, collecting waste, and interacting with AI.
+---
 
-2.4 Functional Requirements
+## 3️⃣ Requirement Specification
 
-Some key use cases:
+### 🖼️ 3.1 External Interface Requirements
 
-Register: Users register by providing their details and create an account.
+* **UI:** Login, Report Waste, Collection, Leaderboard, Chatbot
+* **Software:** PHP, MySQL
+* **Communication:** HTTP / HTTPS
 
-Log In: Users log in to access the system.
+### 🧩 3.2 Class Diagram
 
-Report Waste: Users upload photos of waste for analysis by the AI system.
+Includes classes such as:
+`User`, `Waste`, `Report`, `Collection`, `AI`, `Transaction`
 
-Collect Waste: Users can collect reported waste and upload proof to earn points.
+### 📌 3.3 Detailed Non‑Functional Requirements
 
-Exchange Points for Rewards: Users can exchange collected points for rewards.
+* User Table
+* Waste Table
+* Report Table
+* Collection Table
+* Rewards Table
+* Transaction Table
 
-View Leaderboard: Users can view rankings based on points earned.
+---
 
-2.5 User Characteristics
+## 4️⃣ Diagrams
 
-The system is designed for registered users, who will have access to various functionalities like reporting waste, collecting waste, and interacting with the system's AI.
+### 🗂️ 4.1 ER Diagram
 
-2.6 Non-functional Requirements
+Shows relationships between **User, Waste, Report, Collection**
 
-Performance: Waste analysis should take no more than 10 seconds.
+### 🔄 4.2 Sequence Diagram
 
-Scalability: Real-time updates for leaderboard and user performance.
+Shows step‑by‑step interaction for:
 
-Reliability: The system should be available 24/7.
+* Reporting waste
+* Collecting waste
+* AI verification
 
-Security: Encryption to protect sensitive data and prevent attacks.
+---
 
-Usability: The interface is user-friendly, guiding users in waste management tasks.
+## 🌟 System Overview
 
-3. Requirement Specification
-3.1 External Interface Requirement
+An **AI-driven platform** that:
 
-User Interfaces: Includes registration, login/logout, waste report/upload, collection, leaderboard, and AI chatbot interfaces.
+* Encourages clean environment 🌱
+* Rewards community participation 🏅
+* Automates waste validation 🤖
 
-Software Interfaces: The system uses MYSQL for the database and PHP for backend development.
+---
 
-Communication Interfaces: Communication between clients and the server uses HTTP/HTTPS protocols.
+## ✨ Key Features
 
-3.2 Class Diagram
+* 🤖 AI Waste Analysis
+* 🚮 Waste Collection System
+* 🏆 Leaderboard
+* 🎁 Reward Redemption
+* 💬 AI Chatbot Assistance
+* 🔍 Search & Filter
 
-The Class Diagram (Page 25) shows the relationships between the system's components such as User, Waste, Report, Collection, AI, and Transaction.
+---
 
-3.3 Detailed Non-functional Requirements
+## 🛠 Technologies Used
 
-Details for various data entries, such as the User Table, Report Table, Transaction Table, Collection Table, Rewards Table, and Waste Table, are specified. These tables store essential information like user data, reported waste data, rewards, and transactions.
+### Backend
 
-4. Diagrams
-4.1 ER Diagram
+* PHP (Laravel)
+* MySQL
 
-The ER Diagram (Page 29) illustrates the relationship between the main entities in the system like User, Waste, Report, and Collection.
+### Frontend
 
-4.2 Sequence Diagram
+* HTML, CSS, JavaScript
 
-The Sequence Diagram (Page 30) shows the flow of interactions between users, the system, and other components during processes such as reporting waste, collecting waste, and verifying it.
-Overview
+### AI
 
-The Smart Waste Management System is an AI-powered platform designed to encourage responsible waste disposal and promote recycling. It allows users to report waste, collect waste, earn points, and exchange points for rewards. The system uses AI to analyze reported waste, validate its authenticity, and engage users in interactive conversations about waste management.
+* Image Recognition
+* Machine Learning
 
-Features
+---
 
-AI Waste Analysis: Automatically analyzes the type, weight, and reusability of the reported waste through images.
+## 🚀 Getting Started
 
-Waste Collection: Users can collect waste that has been reported by others.
+### ✅ Prerequisites
 
-Leaderboard: Users can view their rankings based on points earned through reporting and collecting waste.
+* PHP ≥ 8.x
+* MySQL / PostgreSQL
+* Composer
+* Node.js
 
-Reward System: Users earn points for reporting and collecting waste, which can be redeemed for rewards.
+### 🔧 Backend Setup
 
-AI Chatbot: Users can interact with an AI chatbot to get waste management advice and information.
-
-Search and Filter: Users can search for waste reports by location and date.
-
-Technologies Used
-
-Backend: PHP, MySQL (for database), Laravel framework (for backend structure)
-
-Frontend: HTML, CSS, JavaScript
-
-AI: Image Recognition, Machine Learning (for waste type analysis)
-
-Other Tools: PHP, MySQL, AI-based Image Recognition
-
-Getting Started
-Prerequisites
-
-PHP (>= 8.x)
-
-MySQL or PostgreSQL
-
-Composer (for PHP dependencies)
-
-Node.js (for frontend development, if required)
-
-Installation
-Backend Setup
-
-Clone the repository:
-
-git clone <repository-url>
+```bash
+git clone <repo-url>
 cd wasteBackend
-
-
-Install PHP dependencies:
-
 composer install
-
-
-Copy the .env.example to .env and configure the environment variables:
-
 cp .env.example .env
-
-
-Generate the application key:
-
 php artisan key:generate
-
-
-Run migrations to set up the database:
-
 php artisan migrate
-
-
-Start the development server:
-
 php artisan serve
+```
 
-Frontend Setup
+### 🎨 Frontend Setup
 
-Navigate to the frontend directory:
-
+```bash
 cd wasteFrontend
+yarn install   # or npm install
+yarn dev       # or npm run dev
+```
 
+🌐 Open: **[http://localhost:3000](http://localhost:3000)**
 
-Install dependencies:
+---
 
-yarn install   # Or use 'npm install' if you're using npm
+## 📁 Folder Structure
 
+### Backend
 
-Start the frontend development server:
+* app/
+* config/
+* database/
+* routes/
+* storage/
+* public/
+* tests/
 
-yarn dev   # Or use 'npm run dev' if you're using npm
+### Frontend
 
+* src/
+* public/
+* tailwind.config.js
+* vite.config.ts
 
-Open your browser and navigate to http://localhost:3000 to view the frontend.
+---
 
-Folder Structure
-Backend (wasteBackend)
+## 🤝 Contributing
 
-app/: Core application logic (controllers, models)
+Fork the repo 🍴
+Create a new branch 🌿
+Submit a Pull Request 🔁
 
-config/: Configuration files for the application
+---
 
-database/: Database migrations and seeds
+## 🙏 Thank You
 
-routes/: API routes and web routes
-
-storage/: Logs, file storage
-
-public/: Public-facing files (images, stylesheets)
-
-tests/: Unit tests
-
-Frontend (wasteFrontend)
-
-src/: Source code for the frontend (components, utilities)
-
-public/: Public assets (favicon, index.html)
-
-tailwind.config.js: Configuration file for Tailwind CSS
-
-vite.config.ts: Vite configuration file for the build tool
-
-Usage
-
-Register an Account: Users must register to access the system.
-
-Report Waste: Upload a photo of waste for analysis by AI.
-
-Collect Waste: Collect waste reported by others and earn points.
-
-Earn Points: Points are awarded based on reported waste and collection activities.
-
-Exchange Points for Rewards: Redeem collected points for rewards.
-
-View Leaderboard: Check rankings based on points.
-
-Contributing
-
-Feel free to fork the repository and create pull requests for any improvements or bug fixes.
+**Smart Waste Management System** ♻️
+*Clean City, Smart Future* 🌏
